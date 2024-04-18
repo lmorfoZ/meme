@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="top"></div>
+    <section class="faq">
+        <h1><img class="img1" src="neon-purple-star-banner-neon-star-png.png" alt=""><span>FAQs</span> </h1>
+    
+        <article>
+            <h3>What is Frontend Mentor, and how will it help me?<span><button id="button1">▼</button></span></h3>
+            <p id="article1">
+                Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.
+            </p>
+            
+        </article>
+
+        <article>
+            <h3>is Front Mentor free?<span><button id="button2">▼</button></span></h3>
+            <p id="article2">
+                Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.
+            </p>
+        </article>
+
+        <article>
+            <h3>can I use Frontend mentor project in my project in my proftfolio ?<span><button id="button3">▼</button></span></h3>
+            <p id="article3">
+                Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.
+            </p>
+            <h3>How can i get help if Im stuck on a challenge ? <span><button id="button4">▼</button></span></h3>
+            <p id="article4">
+                Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.
+            </p>
+        </article>
+
+        <script>
+
+            let article1 = document.getElementById('article1')
+            article1.hidden = true
+
+            let article2 = document.getElementById('article2')
+            article2.hidden = true
+
+            let article3 = document.getElementById('article3')
+            article3.hidden = true
+
+            let article4 = document.getElementById('article4')
+            article4.hidden = true
+
+            let button1 = document.getElementById('button1')
+            let button2 = document.getElementById('button2')
+            let button3 = document.getElementById('button3')
+            let button4 = document.getElementById('button4')
+            button1.addEventListener('click' , function () {
+                if (article1.hidden == false) {
+                    article1.hidden = true 
+                } else {
+                    article1.hidden = false
+                }
+            })
+
+            button2.addEventListener('click' , function () {
+                if (article2.hidden == false) {
+                    article2.hidden = true 
+                } else {
+                    article2.hidden = false
+                }
+            })
+
+            button3.addEventListener('click' , function () {
+                if (article3.hidden == false) {
+                    article3.hidden = true 
+                } else {
+                    article3.hidden = false
+                }
+            })
+            button4.addEventListener('click' , function () {
+                if (article4.hidden == false) {
+                    article4.hidden = true 
+                } else {
+                    article4.hidden = false
+                }
+            })
+
+           
+        </script>
+    </section>
+
+</html>
